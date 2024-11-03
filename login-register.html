@@ -5,39 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FLATICON ===============-->
-    <link rel="stylesheet" href="" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Ecommerce Website</title>
   </head>
   <body>
     <!--=============== HEADER ===============-->
-    <header class="header"></header>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-container container">
+          <div class="header-content">
+            <span>(+01) - 2345 - 6789</span>
+            <span>Our Location</span>
+          </div>
+          <p class="header-alert-news">
+            Super Value Deals - Save more with coupons.
+          </p>
+          <a href="login-register.html" class="header-top-action">Log in / Sign up</a>
+        </div>
+      </div>
+  
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/img/logo.svg" alt="Logo" class="nav-logo-img">
+        </a>
+        <div class="nav-menu" id="nav_menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="accounts.html" class="nav-link">My Account</a>
+            </li>
+            <li class="nav-item">
+              <a href="compare.html" class="nav-link">Compare</a>
+            </li>
+            <li class="nav-item">
+              <a href="login-register.html" class="nav-link active-link">Login</a>
+            </li>
+          </ul>
+          
+          <div class="header-search">
+            <input type="text" placeholder="Search for items..." class="form-input">
+  
+            <button class="search-btn" title="Search">
+              <img src="assets/img/search.png" alt="Search">
+            </button>
+          </div>
+        </div>
+        
+        <div class="header-user-actions">
+          <a href="wishlist.html" class="header-action-btn" title="Wishlist">
+            <img src="assets/img/icon-heart.svg" alt="Wishlist">
+            <span class="count">3</span>
+          </a>
+          <a href="cart.html" class="header-action-btn" title="Cart">
+            <img src="assets/img/icon-cart.svg" alt="Cart">
+            <span class="count">3</span>
+          </a>
+        </div>
+      </nav>
+    </header>
 
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb"></section>
+      <section class="breadcrumb">
+        <ul class="breadcrumb-list flex">
+          <li><a href="index.html" class="breadcrumb-link">Home</a></li>
+          <li><span class="breadcrumb-link">></span></li>
+          <li><span class="breadcrumb-link">Login / Register</span></li>
+        </ul>
+      </section>
 
       <!--=============== LOGIN-REGISTER ===============-->
-      <section class="login-register"></section>
+      <section class="login-register section-lg">
+        <div class="login-register-container container grid">
+          <div class="login">
+            <h3 class="section-title">Login</h3>
+            <form action="" class="form grid">
+              <input type="email" placeholder="Your Email" class="form-input">
+              <input type="password" placeholder="Your Password" class="form-input">
+              <div class="form-btn">
+                <button class="btn">Login</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="Register">
+            <h3 class="section-title">Create An Account</h3>
+            <form action="" class="form grid">
+              <input type="text" placeholder="Username" class="form-input">
+              <input type="email" placeholder="Your Email" class="form-input">
+              <input type="password" placeholder="Your Password" class="form-input">
+              <input type="password" placeholder="Confirm Password" class="form-input">
+              <div class="form-btn">
+                <button class="btn">Submit & Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
       <!--=============== NEWSLETTER ===============-->
-      <section class="newsletter"></section>
+      <section class="newsletter section">
+        <div class="newsletter-container container grid">
+          <h3 class="newsletter-title flex">
+            <img src="assets/img/icon-email.svg" alt="" class="newsletter-icon">
+            Sign up to Newsletter
+          </h3>
+          <p class="newsletter-description">
+            ...and recive $25 coupon for first shopping.
+          </p>
+          <form action="" class="newsletter-form">
+            <input type="text" class="newsletter-input" placeholder="Enter your email address">
+            <button type="submit" class="newsletter-btn">Subscript</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
+    <footer class="footer container">
+      <div class="footer-container grid">
+        <div class="footer-content">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/img/logo.svg" alt="" class="footer-logo-img">
+          </a>
+          <h4 class="footer-subtitle">Contact</h4>
+          <p class="footer-description">
+            <span>Address:</span> 555 Main Street, New York, NY 10001
+          </p>
+          <p class="footer-description">
+            <span>Phone:</span> +1 123 456 7890
+          </p>
+          <p class="footer-description">
+            <span>Hours:</span> 10:00 - 18:00, son - fri
+          </p>
+          <div class="footer-social">
+            <h4 class="footer-subtitle">Follow Me</h4>
+            <div class="footer-social-links">
+              <a href="">
+                <img src="assets/img/icon-facebook.svg" alt="" class="footer-social-icon">
+              </a>
+              <a href="">
+                <img src="assets/img/icon-twitter.svg" alt="" class="footer-social-icon">
+              </a>
+              <a href="">
+                <img src="assets/img/icon-instagram.svg" alt="" class="footer-social-icon">
+              </a>
+              <a href="">
+                <img src="assets/img/icon-pinterest.svg" alt="" class="footer-social-icon">
+              </a>
+              <a href="">
+                <img src="assets/img/icon-youtube.svg" alt="" class="footer-social-icon">
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-content">
+          <h3 class="footer-title">Address</h3>
+          <ul class="footer-links">
+            <li><a href="" class="footer-link">About Us</a></li>
+            <li><a href="" class="footer-link">Delivery Information</a></li>
+            <li><a href="" class="footer-link">Privacy Policy</a></li>
+            <li><a href="" class="footer-link">Therms & Conditions</a></li>
+            <li><a href="" class="footer-link">Contact Us</a></li>
+            <li><a href="" class="footer-link">Support Center</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-content">
+          <h3 class="footer-title">My Account</h3>
+          <ul class="footer-links">
+            <li><a href="" class="footer-link">Sign in</a></li>
+            <li><a href="" class="footer-link">View Cart</a></li>
+            <li><a href="" class="footer-link">My Wishlist</a></li>
+            <li><a href="" class="footer-link">Track My Order</a></li>
+            <li><a href="" class="footer-link">Help</a></li>
+            <li><a href="" class="footer-link">Order</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-content">
+          <h3 class="footer-title">Secured Payment Gateways</h3>
+          <img src="assets/img/payment-method.png" alt="" class="payment-img">
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; All rights reservd 2024. Yitzi Weiner.
+        </p>
+        <span class="designer">Designed by Yitzi Weiner</span>
+      </div>
+    </footer>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
